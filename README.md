@@ -1,5 +1,5 @@
 # RF Waterfall Spectrogram
-### M5Stack Cardputer + SX1262 LoRa Addon | ESP-IDF C
+### M5Stack CardputerADV + SX1262 LoRa Addon | ESP-IDF C
 
 A real-time RF waterfall spectrogram that sweeps 862–928 MHz in a 5 MHz span,
 displaying signal strength as a scrolling heatmap on the Cardputer's 240×135 ST7789V2 LCD.
@@ -10,7 +10,7 @@ displaying signal strength as a scrolling heatmap on the Cardputer's 240×135 ST
 
 | Component | Details |
 |-----------|---------|
-| MCU | M5Stack Cardputer (ESP32-S3) |
+| MCU | M5Stack CardputerADV (ESP32-S3) |
 | Radio | SX1262 LoRa addon (SPI) |
 | Display | ST7789V2 1.14" 240×135 (built-in) |
 | Keyboard | I2C keyboard controller (built-in) |
@@ -65,24 +65,15 @@ esptool.py --chip esp32s3 --port PORT write_flash \
 
 ---
 
-## Auto-Build via GitHub Actions
-
-Push this repo to GitHub — the included workflow (`.github/workflows/build.yml`)
-will automatically build the firmware and produce a downloadable `.bin` artifact
-under **Actions → Build RF Waterfall Firmware → Artifacts**.
-
----
-
 ## Keyboard Controls
 
 | Key | Action |
 |-----|--------|
-| `A` / `,` | Tune center -250 kHz |
-| `D` / `.` | Tune center +250 kHz |
-| `W` | Tune center +1 MHz |
-| `S` | Tune center -1 MHz |
-| `+` | Raise RSSI ceiling (show weaker signals) |
-| `-` | Lower RSSI ceiling |
+| `9` / `del` | Tune center -250 kHz |
+| `K` / `\` | Tune center +250 kHz |
+| `Y` | Tune center +1 MHz |
+| `O` | Tune center -1 MHz |
+| `F` | Raise RSSI ceiling (show weaker signals) |
 
 ---
 
