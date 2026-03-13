@@ -33,7 +33,7 @@ displaying signal strength as a scrolling heatmap on the Cardputer's 240×135 ST
 | KB SDA | 13 |
 | KB SCL | 15 |
 
----
+
 
 
 ---
