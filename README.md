@@ -35,33 +35,6 @@ displaying signal strength as a scrolling heatmap on the Cardputer's 240×135 ST
 
 ---
 
-## Build Locally
-
-### Prerequisites
-- ESP-IDF v5.2+ installed: https://docs.espressif.com/projects/esp-idf/en/latest/esp32s3/get-started/
-- Target: `esp32s3`
-
-```bash
-# 1. Source ESP-IDF
-. $HOME/esp/esp-idf/export.sh
-
-# 2. Set target
-idf.py set-target esp32s3
-
-# 3. Build
-idf.py build
-
-# 4. Flash (replace PORT with your device, e.g. /dev/ttyUSB0 or COM3)
-idf.py -p PORT flash monitor
-```
-
-### Flash pre-built binaries
-```bash
-esptool.py --chip esp32s3 --port PORT write_flash \
-  0x0000  build/bootloader/bootloader.bin \
-  0x8000  build/partition_table/partition-table.bin \
-  0x10000 build/rf_waterfall.bin
-```
 
 ---
 
